@@ -1,0 +1,39 @@
+[
+    {
+        "primary": "patient-care",
+        "type": [
+            "news"
+        ],
+        "section-name": [
+            "Archive"
+        ],
+        "pulseNewsType": [
+            "News"
+        ],
+        "tags": [
+            "pulse",
+            "obstetrics-and-gynecology",
+            "cancer"
+        ],
+        "tag-urls": {
+            "Cancer": "https://www.evms.edu/pulse/archive/index.php?filter=.cancer"
+        },
+        "data": {
+            "content-id": 99806,
+            "title": "Discover the subtle signs of ovarian cancer",
+            "link": "//www.evms.edu/pulse/archive/discoverthesubtlesignsofovariancancer.php",
+            "all-pulse-link": "https://www.evms.edu/pulse/archive/",
+            "date": "2018-09-17",
+            "stamp": "2019-09-17",
+            "byline": "Virginia Hilton",
+            "description": "Some call it a silent killer. That&rsquo;s because the symptoms of ovarian cancer often go undetected until it&rsquo;s too late.",
+            "ratio": "2-2",
+            "image": {
+                "src": "//www.evms.edu/media/Ovarian_Cancer_Awareness.jpg",
+                "width": 800,
+                "height": 533,
+                "alt": ""
+            }
+        }
+    }
+]

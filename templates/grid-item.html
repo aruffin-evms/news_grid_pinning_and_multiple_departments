@@ -1,0 +1,29 @@
+<div class="col-{{:grid.xs}} col-md-{{:grid.md}} col-lg-{{:grid.lg}} grid-item {{:type.lookup}} {{if stamp}}pin{{/if}}" data-sort="{{:sort}}">
+    <div class="card card--single card-single card--{{:type.lookup}} card-{{:type.lookup}} 
+        {{if image}} card-has-image {{else}}  {{if !isTitleLonger(90)}}card--filled card-filled card--text--larger card-text-larger{{/if}} card--no-image card-no-image {{/if}} 
+        card--ratio--{{:ratio}} card-ratio-{{:ratio}} card--is-revealed card-is-revealed card--post-revealed card-post-revealed" data-id="{{:id}}" data-date="{{:startDate}}">
+        <div class="card__compartment card-compartment">
+            {{if image}}
+                <figure class="card__figure card-figure" style="background-image: url({{:image.src}});">
+                    <img src="{{:image.src}}" alt="" class="card__image card-image">
+                </figure>
+            {{/if}}
+            <div class="card__body card-body">
+                <div class="card__columns card-columns">
+                    <div class="card__category-icon card-category-icon">
+                        <svg class="icon icon--{{:type.icon}} icon-{{:type.icon}}">
+                            <use xlink:href="#{{:type.icon}}"></use>
+                        </svg>
+                    </div>
+                    <div class="card__content card-content">
+                        <p class="card__meta card-meta">
+                            <span class="card__meta card-meta card-meta__category card-meta-category">{{:type.display}}</span>
+                            {{if type.lookup === 'event'}}<span class="card-meta">{{:startDate}}</span>{{/if}}
+                        </p>
+                    </div>
+                </div>
+                <h3 class="card__title card-title">{{:title}}</h3>
+            </div>
+        </div>
+    </div>
+</div>

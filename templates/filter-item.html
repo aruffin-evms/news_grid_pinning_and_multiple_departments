@@ -1,0 +1,12 @@
+<label class="filter__item filter-item">
+    <div class="filter__icon filter-icon">
+        <svg class="icon icon-{{:value}}">
+            <use xlink:href="#{{:value}}"></use>
+        </svg>
+    </div>
+    <div class="filter__checkbox filter-checkbox">
+        <input {{if checked}}checked="checked"{{/if}} value="{{:value}}" type="checkbox">
+        <span></span>
+    </div>
+    <div class="filter__label filter-label">{{:display}}</div>
+</label>

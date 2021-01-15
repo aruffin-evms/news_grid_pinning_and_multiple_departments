@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body style="margin:0;padding:0">
+        <div class="grid centerX">
+            <div class="cell-1_1"></div>
+            <div class="cell-1_2 centerXY"><button id="news-modal-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="false">×</span>
+                </button></div>
+            <div class="cell-2_1" style="color:white;font-family: Cormorant Garamond, serif;font-size: 2rem;">{{:title}}</div>
+            <div class="cell-2_2">2_2</div>
+            <div class="cell-3_1">3_1</div>
+            <div class="cell-3_2">3_2</div>
+            <div class="cell-4_1" style="color:white;font-size:.8rem;">{{:startDate}}</div>
+            <div class="cell-4_2">4_2</div>
+            <div class="cell-5_1">5_1</div>
+            <div class="cell-5_2">5_2</div>
+            <div class="cell-6_1" style="color:white;font-size:.8rem;">
+            {{if byline}}
+            By {{:byline}}
+            {{/if}}
+            </div>
+            <div class="cell-6_2">6_2</div>
+            <div class="cell-7_1">7_1</div>
+            <div class="cell-7_2">7_2</div>
+            <div class="cell-8_1" style="color:white;font-size:20px;">{{:description}}</div>
+            <div class="cell-8_2">8_2</div>
+            <div class="cell-9_1">9_1</div>
+            <div class="cell-9_2">9_2</div>
+            <div class="cell-10_1">
+                <ul class="tag-list" style="list-style-type:none;">
+                    {{for tagsUrls}}
+                    <li>
+                        {{props #data}}
+                            <a href="{{>prop}}" target="_blank">{{>key}}</a>
+                        {{/props}}
+                    </li>
+                    {{/for}}
+                </ul>
+            </div>
+            <div class="cell-10_2">10_2</div>
+            <div class="cell-11_1">11_1</div>
+            <div class="cell-11_2"></div>
+            <div class="cell-12_1"><a href="{{:link}}" target="_blank" class="button centerXY">Read More</a></div>
+            <div class="cell-12_2"></div>
+        </div>
+    </body>
+</html>
